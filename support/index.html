@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="LumaBox 产品支持：密码恢复、文件导入、无线传输、回收站和生物识别常见问题。">
+  <meta name="description" content="LumaBox 产品支持：快速上手、密码与恢复密钥、相册管理、文件导入、无线传输及数据删除帮助。">
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f8f5ef">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#171411">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23211c18'/%3E%3Cpath d='M15 25 32 15l17 10-17 10z' fill='%23f2a23c'/%3E%3Cpath d='m15 25 17 10v17L15 42z' fill='%23d77a22'/%3E%3Cpath d='m49 25-17 10v17l17-10z' fill='%23f7bd68'/%3E%3C/svg%3E">
@@ -34,63 +34,175 @@
   </header>
   <div class="document">
     <article>
-      <section id="start">
-        <h2>常见问题</h2>
+      <section id="quick-start">
+        <h2>快速上手</h2>
+        <div class="quick-grid">
+          <div class="quick-card">
+            <span class="step-number">1</span>
+            <h3>设置主密码</h3>
+            <p>首次启动时创建主密码，并将生成的恢复密钥保存在独立安全的位置。</p>
+          </div>
+          <div class="quick-card">
+            <span class="step-number">2</span>
+            <h3>创建相册</h3>
+            <p>设置相册名称、封面和可选的独立密码；相册中还能继续创建子相册。</p>
+          </div>
+          <div class="quick-card">
+            <span class="step-number">3</span>
+            <h3>导入内容</h3>
+            <p>从系统照片库、“文件”App、Finder 文件共享或同一 Wi-Fi 下的浏览器导入。</p>
+          </div>
+        </div>
+        <p class="note"><strong>卸载前注意：</strong>LumaBox 当前没有账号和云端备份。卸载应用会删除本地内容，请先确认重要文件已经安全导出。</p>
+      </section>
+
+      <section id="security">
+        <h2>密码与访问</h2>
         <div class="faq-list">
           <details>
             <summary>忘记主密码怎么办？</summary>
-            <p>在密码页面进入恢复流程并输入首次设置密码时生成的恢复密钥。恢复密钥验证成功后可以重置主密码。恢复密钥只保存在你控制的位置，开发者无法查看或替你找回。</p>
+            <p>在密码页面进入恢复流程，输入首次设置或最近一次更新时保存的恢复密钥，然后创建新的主密码。恢复密钥验证成功后才能完成重置。</p>
           </details>
           <details>
             <summary>恢复密钥也丢失了怎么办？</summary>
-            <p>没有正确的主密码或恢复密钥时，受保护内容无法解密。请不要卸载应用或清除数据，并先查找你保存恢复密钥的密码管理器、纸质备份或其他安全位置。</p>
+            <p>没有正确的主密码或有效恢复密钥时，受保护内容无法解密，开发者也无法替你恢复。请不要卸载应用或清除数据，先检查密码管理器、纸质备份和其他安全存放位置。</p>
           </details>
           <details>
-            <summary>如何导入照片和视频？</summary>
+            <summary>如何更新恢复密钥？</summary>
+            <p>进入“设置”中的恢复密钥管理入口，先验证当前恢复密钥。保存并确认新的恢复密钥后，旧密钥会失效。</p>
+          </details>
+          <details>
+            <summary>主密码和相册独立密码有什么区别？</summary>
+            <p>主密码控制 LumaBox 整体访问；相册独立密码只保护指定相册。你可以在创建相册时设置独立密码，也可以在相册右上角菜单中设置、修改或移除。</p>
+          </details>
+          <details>
+            <summary>Face ID 或 Touch ID 无法使用怎么办？</summary>
+            <p>请在 iOS“设置”中确认已允许 LumaBox 使用 Face ID，并确认设备已录入可用的生物识别信息。设备重启、生物识别连续失败或系统要求验证时，需要先输入主密码。</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="albums">
+        <h2>相册与文件</h2>
+        <div class="faq-list">
+          <details>
+            <summary>如何创建子相册？</summary>
+            <p>进入一个相册后使用新增入口即可继续创建相册。子相册可单独设置名称、封面和密码，用于按文件夹层级整理内容。</p>
+          </details>
+          <details>
+            <summary>如何修改相册名称、封面或密码？</summary>
+            <p>打开相册右上角菜单，选择对应的编辑操作。封面可以使用内置样式或相册内的图片；锁定相册需要验证后才能修改敏感设置。</p>
+          </details>
+          <details>
+            <summary>复制到另一个相册会占用额外空间吗？</summary>
+            <p>会。复制会创建一份独立文件，两份内容分别占用存储空间，之后删除其中一份不会影响另一份。</p>
+          </details>
+          <details>
+            <summary>删除的文件还能恢复吗？</summary>
+            <p>移入回收站的文件可在 30 天内恢复。超过 30 天、主动选择永久删除或清空回收站后，文件无法从 LumaBox 中恢复。</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="import">
+        <h2>导入与无线传输</h2>
+        <div class="faq-list">
+          <details>
+            <summary>可以通过哪些方式导入？</summary>
             <ul>
-              <li>在相册中使用导入按钮，可从系统照片库或“文件”App 选择内容。</li>
-              <li>通过 Finder 文件共享将文件放入导入目录后，可在 LumaBox 设置中的导入入口处理。</li>
-              <li>也可以在设置中开启无线传输，从同一 Wi-Fi 下的电脑浏览器上传文件。</li>
+              <li>从系统照片库选择照片和视频。</li>
+              <li>从“文件”App 选择媒体文件。</li>
+              <li>通过 Mac Finder 文件共享，把文件或文件夹放入 LumaBox 的导入目录，再到应用设置中处理。</li>
+              <li>在设置中开启无线传输，从同一 Wi-Fi 下的电脑浏览器上传。</li>
             </ul>
+          </details>
+          <details>
+            <summary>Finder 导入会覆盖上一次生成的相册吗？</summary>
+            <p>不会。每次处理导入目录时，LumaBox 会保留已生成的内容，并为新的导入结果创建独立目标，避免覆盖之前的相册。</p>
+          </details>
+          <details>
+            <summary>无线传输如何使用？</summary>
+            <ol>
+              <li>让手机和电脑连接同一个可信 Wi-Fi。</li>
+              <li>在 LumaBox“设置”中进入无线传输并选择目标相册。</li>
+              <li>启动服务，在电脑浏览器打开手机显示的地址。</li>
+              <li>输入 6 位验证码，选择文件并开始传输。</li>
+              <li>确认文件显示“已完成”后，在手机上停止无线传输。</li>
+            </ol>
           </details>
           <details>
             <summary>无线传输连接不上怎么办？</summary>
             <ul>
-              <li>确认手机与电脑连接到同一个 Wi-Fi，并允许 LumaBox 访问本地网络。</li>
-              <li>保持 LumaBox 停留在无线传输页面，避免手机锁屏。</li>
-              <li>在电脑浏览器中准确输入应用显示的地址和验证码。</li>
-              <li>公司、酒店或访客网络可能会隔离设备，可改用可信的家庭网络或个人热点。</li>
+              <li>确认两台设备连接同一个 Wi-Fi，并允许 LumaBox 访问本地网络。</li>
+              <li>保持 LumaBox 停留在无线传输页面，避免手机锁屏或切到后台。</li>
+              <li>重新确认浏览器地址、端口和本次会话的 6 位验证码。</li>
+              <li>关闭 VPN 或代理后重试；公司、酒店和访客网络可能会隔离设备。</li>
+              <li>仍无法连接时，改用可信的家庭网络或手机个人热点。</li>
             </ul>
           </details>
           <details>
+            <summary>网页显示“失败”或文件没有导入怎么办？</summary>
+            <p>确认手机剩余空间充足、文件未损坏且格式可由 iOS 读取，然后单独重试失败文件。传输过程中不要锁屏、离开页面或切换网络。文件名重复不会代表内容已覆盖，LumaBox 会为导入文件生成独立存储记录。</p>
+          </details>
+          <details>
             <summary>导入速度为什么会变慢？</summary>
-            <p>导入过程需要复制文件、读取媒体信息、生成缩略图，并将内容写入受保护的本地存储。大视频、一次导入大量文件、设备存储空间不足或局域网质量较差时都会增加耗时。请保持应用在前台并留出足够可用空间。</p>
+            <p>导入需要复制文件、读取媒体信息、生成缩略图并写入加密存储。大视频、一次导入大量文件、设备温度较高、可用空间不足或 Wi-Fi 信号较差都会增加耗时。建议分批导入，并保持应用在前台。</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="playback">
+        <h2>浏览与播放</h2>
+        <div class="faq-list">
+          <details>
+            <summary>图片如何连续浏览？</summary>
+            <p>在相册中点击任意图片进入全屏浏览，左右滑动可以查看当前相册中的其他图片。</p>
           </details>
           <details>
-            <summary>删除的文件还能恢复吗？</summary>
-            <p>移入回收站的文件可在 30 天内恢复。超过 30 天、主动选择永久删除或清空回收站后，文件将无法从 LumaBox 中恢复。</p>
+            <summary>视频会自动适配横竖屏吗？</summary>
+            <p>播放器会根据视频画面方向选择合适的展示方式。你也可以在播放设置中调整进度记忆、控制栏自动隐藏、拖动预览、手势和长按倍速等行为。</p>
           </details>
           <details>
-            <summary>Face ID 或 Touch ID 无法使用怎么办？</summary>
-            <p>请在 iOS“设置”中确认已允许 LumaBox 使用 Face ID，并确认设备已录入可用的生物识别信息。生物识别不可用时，仍应使用主密码进入应用。</p>
+            <summary>应用进入后台后为什么停止播放？</summary>
+            <p>这是隐私保护行为。LumaBox 进入后台时会暂停视频，并遮挡任务切换界面中的私人内容；返回应用并完成必要验证后可继续使用。</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="device">
+        <h2>存储、换机与卸载</h2>
+        <div class="faq-list">
+          <details>
+            <summary>LumaBox 会自动上传或备份数据吗？</summary>
+            <p>不会。当前版本没有账号和开发者云服务，私有数据目录也不会进入 iCloud 设备备份。请自行保留需要长期保存的原始文件或导出副本。</p>
+          </details>
+          <details>
+            <summary>更换手机后内容会自动迁移吗？</summary>
+            <p>当前版本不提供云端同步或自动迁移。换机前请先将需要保留的内容导出到你控制的安全位置，再在新设备上重新导入。</p>
           </details>
           <details>
             <summary>卸载应用后数据还在吗？</summary>
-            <p>不在。LumaBox 的内容保存在应用本地沙盒内，卸载应用会一并删除这些数据。应用数据不会自动上传到开发者服务器，请在卸载前先导出需要保留的文件。</p>
+            <p>不在。卸载 LumaBox 会删除应用沙盒中的相册、媒体和本地设置。重新安装不会恢复先前内容，开发者服务器也没有可供恢复的副本。</p>
           </details>
         </div>
       </section>
 
       <section id="contact" class="contact-card">
-        <h2>仍需帮助？</h2>
-        <p>联系时请说明设备型号、iOS 版本、LumaBox 版本、问题发生步骤和界面提示。请勿通过邮件发送密码、恢复密钥或私人照片和视频。</p>
+        <h2>联系开发者</h2>
+        <p>如果上述内容没有解决问题，请在邮件中说明设备型号、iOS 版本、LumaBox 版本、问题发生步骤和界面提示。可以附上不包含私人媒体的界面截图。</p>
+        <p>请勿发送主密码、相册密码、恢复密钥或私人照片和视频。开发者不会通过邮件索取这些内容。</p>
         <p><strong>公开支持邮箱：</strong> <span class="pending-value">发布前待配置</span></p>
       </section>
     </article>
 
     <aside class="table-of-contents" aria-label="本页目录">
       <h2>支持主题</h2>
-      <a href="#start">常见问题</a>
+      <a href="#quick-start">快速上手</a>
+      <a href="#security">密码与访问</a>
+      <a href="#albums">相册与文件</a>
+      <a href="#import">导入与无线传输</a>
+      <a href="#playback">浏览与播放</a>
+      <a href="#device">存储与换机</a>
       <a href="#contact">联系开发者</a>
       <a href="../privacy/">隐私政策</a>
     </aside>
