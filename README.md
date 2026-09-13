@@ -1,11 +1,12 @@
 # LumaBox Site
 
-LumaBox 的公开静态网站，包含 App Store Connect 可使用的隐私政策和产品支持页面。
+LumaBox 的公开静态网站，包含 App Store Connect 可使用的隐私政策、用户协议和产品支持页面。
 
 ## 页面
 
 - `/`：站点首页
 - `/privacy/`：隐私政策
+- `/terms/`：用户协议
 - `/support/`：产品支持与常见问题
 
 ## 本地预览

@@ -182,7 +182,7 @@ h1 {
 
 .link-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
   padding-bottom: 80px;
 }
@@ -468,6 +468,40 @@ details ul {
     flex-direction: column;
     gap: 8px;
     justify-content: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .nav {
+    width: calc(100% - 20px);
+  }
+
+  .brand {
+    gap: 0;
+  }
+
+  .brand > span:last-child {
+    display: none;
+  }
+
+  .nav-links {
+    gap: 2px;
+  }
+
+  .nav-links a {
+    padding: 7px 6px;
+    font-size: 13px;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 8px 14px;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 900px) {
+  .link-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
